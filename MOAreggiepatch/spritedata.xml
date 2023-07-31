@@ -2848,7 +2848,17 @@
     <checkbox nybble="10.1" title="Location Lava - Flat Top" comment="When enabled, the animated crest effect on the top portion of the Lava is removed. This creates a 'square' look." comment2="It's recommended to only use this when the Lava is touching a straight ceiling." requirednybble="5.2-5.4,11.2-12.4" requiredval="0, 1-255"/> <!-- Appears only if Location ID is set and hides if Speed is set -->
     <checkbox nybble="10.2" title="Location Lava - Place Behind Layer 0" comment="When enabled, the Z-Order of the lava will be moved slightly so that it appears behind Layer 0 terrain." comment2="In order for this to work properly, the visibility settings for the Zone must be set to 'Normal'." requirednybble="5.2-5.4,11.2-12.4" requiredval="0, 1-255"/> <!-- Appears only if Location ID is set and hides if Speed is set -->
 
-    <checkbox nybble="10.4" title="Lava Waves" comment="Don't use with locations! Oh yeah and, don't make garbage levels with this. They exist for a reason. -aqua21" requirednybble="11.2-12.4" requiredval="0" />
+    <checkbox nybble="10.4" title="Lava Waves" comment="Don't use with locations! (2nd style is not complete. it will crash your game.)" requirednybble="11.2-12.4" requiredval="0" />
+	<list nybble="3-4" title="Color" requirednybble="10.4" requiredval="0" >
+      <entry value="0">Normal</entry>
+      <entry value="1">Blue</entry>
+      <entry value="2">Poison</entry> <!--may or may not be scrapped-->
+    </list>
+	<list nybble="3-4" title="Wave Color" requirednybble="10.4" requiredval="1" > <!-- eventually add poison waves here -->
+      <entry value="0">Normal</entry>
+      <entry value="1">Blue</entry>
+      <entry value="2">2nd style (?)</entry>
+    </list>
   </sprite> <!-- #139: Lava -->
   
   <sprite id="504" name="AntiGrav" asmhacks="True" notes="A sprite for activating and deactivating Anti gravity.">
