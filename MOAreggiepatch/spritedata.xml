@@ -2861,7 +2861,7 @@
     </list>
   </sprite> <!-- #139: Lava -->
   
-  <sprite id="504" name="AntiGrav" asmhacks="True" notes="A sprite for activating and deactivating Anti gravity.">
+  <sprite id="504" name="AntiGrav" asmhacks="True" notes="A sprite for activating and deactivating anti-gravity.">
     <dualbox nybble="11.1" title1="Auto-start" title2="Event triggered" comment="This determines whether this Sprite can be triggered by an event or not." />
     <value nybble="3-4" title="Triggering Event ID" idtype="Triggering Event" requirednybble="11.1" requiredval="1" />
 
@@ -2870,5 +2870,21 @@
     <dualbox nybble="10.4" title1="Activate" title2="Deactivate" requirednybble="11.3" requiredval="0" />
     <value nybble="11.4-12.4" title="Interval" comment="You can select between ~1-32 seconds." requirednybble="11.2" requiredval="1" />
   </sprite> <!-- #504: AntiGrav -->
+  
+  <sprite id="508" name="Triple &quot;?&quot; Block" notes="Triple Question Block from NSMB2">
+    <list nybble="7" title="Item">
+      <entry value="0">Mushroom/Fire Flower</entry>
+      <entry value="1">Star</entry>
+      <entry value="2">Coin</entry>
+      <entry value="3">1-UP</entry>
+      <entry value="4">Fire Flower</entry>
+      <entry value="5">Mushroom/Ice Flower</entry>
+      <entry value="6">Penguin</entry>
+      <entry value="7">Propeller</entry>
+      <entry value="8">Mini Mushroom</entry>
+      <entry value="9">Hammer</entry>
+      <entry value="10">10 Coins</entry>
+    </list>
+  </sprite>
 </sprites>
 <!-- thank you so much for a-playing my game! -->
