@@ -2886,5 +2886,18 @@
       <entry value="10">10 Coins</entry>
     </list>
   </sprite>
+  <sprite id="497" name="Player Number Event" asmhacks="True" notes="A sprite triggering different events depending on the number of players." advancednotes="If you set this sprite to be event triggered and not looping it will automatically deactivate the event it was triggered with after finishing.">
+  <dualbox nybble="11.1" title1="Auto-start" title2="Event triggered" comment="This determines whether this Sprite can be triggered by an event or not." />
+  <value nybble="3-4" title="Triggering Event ID" idtype="Triggering Event" requirednybble="11.1" requiredval="1" />
+
+  <checkbox nybble="11.2" title="Loop" comment="When enabled, the target event will be triggered in a specified interval." />
+  <dualbox nybble="11.3" title1="Activate" title2="Toggle" comment="This determines whether the target event gets deactivated if it's already activated." />
+  <value nybble="11.4-12.4" title="Interval" comment="You can select between ~1-32 seconds." requirednybble="11.2" requiredval="1" />
+
+  <value nybble="5.1-6.2" title="1 Player" comment="Event triggered if there is one active player." />
+  <value nybble="6.3-7.4" title="2 Players" comment="Event triggered if there are two active players." />
+  <value nybble="8.1-9.2" title="3 Players" comment="Event triggered if there are three active players." />
+  <value nybble="9.3-10.4" title="4 Players" comment="Event triggered if there are four active players." />
+  </sprite> <!-- #497: Player Number Event -->
 </sprites>
 <!-- thank you so much for a-playing my game! -->
